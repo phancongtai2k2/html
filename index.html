@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Tốt Nghiệp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        canvas {
+            cursor: crosshair;
+            display: block;
+            position: absolute;
+            z-index: 3; /* Đặt z-index để chắc chắn nó không bị che phủ */
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    <div class="content">
+        <h1>Chúc Mừng Tốt Nghiệp!</h1>
+        <p>Chúc bạn thành công trong mọi thử thách sắp tới!</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://wpshare247.com/ajquery.lib/fireworks/script.js"></script>
+    <script>
+        // Khởi tạo particles.js
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 150,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.8,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 4,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 6,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "top",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
